@@ -1,78 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shopping Cart</title>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-
 <body>
-  <!-- -----header------- -->
-  <header>
-    <nav>
-      <!-- <a href="">Shopping Cart</a> -->
-      <h2>SHOPPING CART</h2>
-      <a href="../HTML/Cart.html"><i class="bx bxs-shopping-bag"></i></a>
-      <i class="bx bxs-shopping-bag"></i>
-    </nav>
-  </header>
- 
-    <div>
-      <h2 class="heading"> TRENDY CLOTHES</h2>
-    </div>
-    <section>
-    <div class="item">
-      <img src="../images/anarkali - Copy.png" alt="" />
-      <h3>ANARKALI</h3>
-      
-      <h4>₹ 1000</h4>
-      </div>
-      <div class="item">
-        <img src="../images/chudidhar - Copy.png" alt="" />
-        <h3>CHUDIDHAR</h3>
-        
-        <h4>₹ 500</h4>
-        </div>
-        <div class="item">
-          <img src="../images/frock - Copy.png" alt="" />
-          <h3>FROCK</h3>
-          
-          <h4>₹ 600</h4>
-          </div>
-          <div class="item">
-            <img src="../images/jeans - Copy.png" alt="" />
-            <h3>JEANS</h3>
-            
-            <h4>₹ 700</h4>
-            </div>
-            <div class="item">
-              <img src="../images/leggings - Copy.png" alt="" />
-              <h3>LEGGINGS</h3>
-              
-              <h4>₹ 200</h4>
-              </div>
-              <div class="item">
-                <img src="../images/saree - Copy.png" alt="" />
-                <h3>SAREE</h3>
-                
-                <h4>₹ 1200</h4>
-                </div>
-                <div class="item">
-                  <img src="../images/sweatshirt - Copy.png" alt="" />
-                  <h3>SWEATSHIRT</h3>
-                  
-                  <h4>₹ 600</h4>
-                  </div>
-                  <div class="item">
-                    <img src="../images/top - Copy.png" alt="" />
-                    <h3>TOP</h3>
-                    
-                    <h4>₹ 400</h4>
-                  </div>
-  </section>
-</body>
+    <!--Header-->
+    <header>
+        <nav class="navbar">
+            <a href="" >Shopping Cart</a>
+            <a href="./Cart.html"><i class='bx bxs-cart' ></i></a> 
+        </nav>
+    </header>
 
+    <!--item section-->
+    <section>
+        <div>
+            <br><br><br>
+            <h2 id="shop-product">Shopping Products</h2>
+        </div>
+
+        <!--Items list begins-->
+        <div class="product-container-1">
+        <div class="product-1">
+            <img src="../Images/anarkali - Copy.png" alt="Loading">
+            <h2>Anarkali</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹2000</span>
+            <button type="button" onclick="addToCart('Anarkali', 'anarkali - Copy.png', 2000)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/bag.png" alt="Loading">
+            <h2>Bag</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹1000</span>
+            <button type="button" onclick="addToCart('bag', 'bag.png', 1000)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/chudidhar - Copy.png" alt="Loading">
+            <h2>chudidhar</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹1500</span>
+            <button type="button" onclick="addToCart('chudidhar', 'chudidhar - Copy.png', 1500)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/dres.png" alt="Loading">
+            <h2>dress</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹1750</span>
+            <button type="button" onclick="addToCart('dress', 'dres.png', 1750)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/frock - Copy.png" alt="Loading">
+            <h2>frock</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹3500</span>
+            <button type="button" onclick="addToCart('frock', 'frock - Copy.png', 3500)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+        <div class="product-1">
+            <img src="../Images/jeans - Copy.png" alt="Loading">
+            <h2>jeans</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹950</span>
+            <button type="button" onclick="addToCart('jeans', 'jeans - Copy.png', 950)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/leggings - Copy.png" alt="Loading">
+            <h2>leggings</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹500</span>
+            <button type="button" onclick="addToCart('Leggings', 'leggings - Copy.png', 500)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/saree - Copy.png" alt="Loading">
+            <h2>Saree</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹1700</span>
+            <button type="button" onclick="addToCart('Saree', 'saree - Copy.png', 1700)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/sweatshirt - Copy.png" alt="Loading">
+            <h2>Sweatshirt</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹1950</span>
+            <button type="button" onclick="addToCart('sweatshirt', 'sweatshirt - Copy.png', 1950)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div >
+
+        <div class="product-1">
+            <img src="../Images/top - Copy.png" alt="Loading">
+            <h2>top</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
+            <span>₹2750</span>
+            <button type="button" onclick="addToCart('top', 'top - Copy.png', 2750)">Add</button>
+            <i class='bx bxs-t-shirt'></i>
+        </div>
+        </div>
+
+    </section>
+
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/Script.js">
+        
+    </script>
+</body>
 </html>
